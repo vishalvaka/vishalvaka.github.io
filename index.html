@@ -243,6 +243,18 @@ a,
   background-image: linear-gradient(to right, rgba(255, 255, 255, .4) 0%, var(--accent) 100%) !important;
 }
 
+/* Ensure particle canvas doesn't block clicks */
+#particles-js, #particles-js canvas {
+  pointer-events: none !important;
+}
+
+/* disable pointer events on transparent hero overlays */
+.slider-item .overlay,
+.slider-item .slider-text .one-third .overlay,
+.hero-wrap .overlay {
+  pointer-events: none !important;
+}
+
 </style>
 
 
